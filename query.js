@@ -18,4 +18,7 @@ const queryType = new GraphQLObjectType({
   }
 });
 
+//fields are where you specify the endpoints
+//resolve indicates action to take when endpoint is called
+
 exports.queryType = queryType;
