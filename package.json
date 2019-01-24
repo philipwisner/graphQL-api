@@ -1,0 +1,24 @@
+{
+  "name": "graphql-api",
+  "version": "1.0.0",
+  "description": "Sample GraphQL API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philipwisner/graphQL-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/philipwisner/graphQL-api/issues"
+  },
+  "homepage": "https://github.com/philipwisner/graphQL-api#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.1.1"
+  }
+}
