@@ -14,6 +14,20 @@ const queryType = new GraphQLObjectType({
       resolve: function () {
         return "Hello World";
       }
+    },
+
+    movie: {
+      type: movieType,
+      args: {
+        id: {
+          type: GraphQLInt
+        }
+      },
+      resolve: function (source, args) {
+        return _.find(movies, {
+          id: args.id
+        });
+      }
     }
   }
 });
