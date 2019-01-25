@@ -31,6 +31,19 @@ const queryType = new GraphQLObjectType({
           id: args.id
         });
       }
+    },
+    director: {
+      type: directorType,
+      args: {
+        id: {
+          type: GraphQLInt
+        }
+      },
+      resolve: function (source, args) {
+        return _.find(directors, {
+          id: args.id
+        });
+      }
     }
   }
 });
